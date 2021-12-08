@@ -1,0 +1,35 @@
+<div id="esquina1"></div>
+<div id="esquina2"></div>
+<div id="semicirculo"></div>
+
+<div id="recuadro" class="col-md-6 offset-md-7"> 
+    <div class="card" style="background-color: rgba(255, 0, 0, 0); border: none;">
+        <img id="imagenLogo" src="../../assets/logo/Logo1.png" alt="Logo"><br>
+        <div class="card-body" style="border: 2px solid #FF9922; background-color: white; border-radius: 10px;">
+            <form>
+                <div class="form-group">
+                    <label for="username" style="font-size: 0.90rem;">Usuario:</label>
+                    <input type="text" class="form-control" placeholder="usuario"/>
+                    <!--<div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                        <div *ngIf="f.username.errors.required">Se requiere un nombre de usuario</div>
+                    </div>-->
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="password" style="font-size: 0.90rem;">Contraseña:</label>
+                    <input type="password" class="form-control" placeholder="contraseña"/>
+                    <!--<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Se requiere una Contraseña</div>
+                    </div>-->
+                </div>
+                <br>
+                
+            </form>
+            <a href="/home" class="button btn-log">Login</a>
+            
+            <br>
+            <br>
+            <a href="/registro">Aun no eres miembro?, Registrate</a>
+        </div>
+    </div>
+</div>

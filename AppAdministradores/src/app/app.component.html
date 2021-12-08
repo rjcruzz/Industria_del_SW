@@ -1,0 +1,67 @@
+﻿<!-- navbar -->
+<nav class="navbar navbar-expand navbar-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <img id="imagenLogo" src="../assets/Logo2.png" alt="Logo" class="nav-item nav-link" routerLink="/">
+        <a id="botonEmpresas" class="nav-item nav-link text-center" routerLink="/empresas">Empresas</a>
+        <a id="botonOrdenes" class="nav-item nav-link text-center" routerLink="/ordenes">Ordenes</a>
+        <a id="botonMotoristas" class="nav-item nav-link text-center" routerLink="/motoristas">Motoristas</a>
+        <a id="botonLogout" class="nav-item nav-link text-center" (click)="logout()">Logout</a>
+    </div>
+</nav>
+
+<!-- main -->
+<router-outlet></router-outlet>
+
+<style>
+    #imagenLogo{
+        width: 120px;
+        left: 0px;
+        top: 0px;
+        background: url(.png);
+        box-sizing: border-box;
+        border-radius: 0px 231px 231px 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar{
+        background-color: #FF9922;
+    }
+
+    .nav-item{
+        margin: 5px;
+        color: black;
+    }
+
+    #botonEmpresas{
+        background-color: #FF9090;
+        width: 100px;
+        border-radius: 3px;
+        padding: 10px;
+        color: #252525;
+    }
+
+    #botonOrdenes{
+        background-color: #FFC581;
+        width: 100px;
+        border-radius: 3px;
+        padding: 10px;
+        color: #252525;
+    }
+
+    #botonMotoristas{
+        background-color: #FFF492;
+        width: 100px;
+        border-radius: 3px;
+        padding: 10px;
+        color: #252525;
+    }
+
+    #botonLogout{
+        background-color: #FF9090;
+        width: 100px;
+        border-radius: 3px;
+        margin-left:auto;
+        color: #252525;
+    }
+</style>

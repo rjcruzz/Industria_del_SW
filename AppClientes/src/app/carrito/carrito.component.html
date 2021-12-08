@@ -1,0 +1,102 @@
+<!--NAV BAR o MENU-->
+<app-menu></app-menu>
+
+<!--TABLA CON PRODUCTOS EN CARRITO-->
+<div class="container mt-5">
+    <div class="row">
+        <H2>Carrito:</H2>
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col">Producto</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Producto 1</th>
+                      <td>4</td>
+                      <td>L. 222.52</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Producto 1</th>
+                        <td>4</td>
+                        <td>L. 222.52</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Producto 1</th>
+                        <td>4</td>
+                        <td>L. 222.52</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Producto 1</th>
+                        <td>4</td>
+                        <td>L. 222.52</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Producto 1</th>
+                        <td>4</td>
+                        <td>L. 222.52</td>
+                      </tr>
+                  </tbody>
+            </table>
+        </div>
+        <br>
+        <h3>Subtotal: L. 585.55</h3>
+        <h3>ISV: L. 222.55</h3>
+        <h3>Envio: L. 60.00</h3>
+        <H1>Total: L. 854.59</H1>
+    </div>
+</div>
+
+<!--BOTON PARA VER HISTORIAL DE PEDIDOS-->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <button type="button" class="btn btn-lan" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fas fa-2x fa-check-circle" style="color: white; margin-right: 3px;"></i>Procesar Orden
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!--MODAL PARA VER DETALLES DE PEDIDOS-->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">Detalle de su pedido:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+  
+          <div class="container">
+            <form action="">
+                <div class="form-group">
+                    <label for="cantidad" style="font-size: 0.90rem;">Direccion:</label>
+                    <input type="text" class="form-control" placeholder="21/09/1993"/>
+                </div>
+                    <br>
+                <div class="form-group">
+                    <label for="cantidad" style="font-size: 0.90rem;">Pago:</label>
+                    <select class="form-control" name="" id="">
+                        <option value="">Tarjeta Debito</option>
+                        <option value="">Tarjeta Credito</option>
+                        <option value="">Efectivo</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Numero Tarjeta"/>
+                </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+          <button type="button" class="btn btn-success">Hecho</button>
+        </div>
+      </div>
+    </div>
+  </div>
